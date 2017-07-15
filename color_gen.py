@@ -98,11 +98,11 @@ def gen_color_gradient(color):
   return(np.array(colors))
     
 def format_html(colors):
-  print "<html>"
+  print("<html>")
   for i in colors:
     for j in i:
-      print "<div style='float:left; width:500px; height:60px;background-color:"+j+"'>&nbsp;</div>"
-  print "</html>"
+      print("<div style='float:left; width:500px; height:60px;background-color:"+j+"'>&nbsp;</div>")
+  print("</html>")
   
 color = "#00680f"
 format_html(gen_color_gradient(color))
